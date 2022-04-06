@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <!-- CSS -->
+    <link rel="stylesheet" href="../stylesheet.css">
+
+    <title>Contact Us</title>
+</head>
+
+<body class="body-contactus">
+    <!-- Comienzo del header -->
+    <section id="header">
+        <header>
+            <!-- Comienzo del menú -->
+            <nav id="navegacion">
+                <div class="menu">
+                    <div class="logo">
+                        <!-- Comienzo del logo -->
+                        <a href="index.html"><img id="logo" src="../images/logo.png" alt="Roll Translations logo"></a>
+                    </div>
+                    <!-- Fin del logo -->
+                    <div class="menu-item"><a href="index.html">Home</a></div>
+                    <div class="menu-item"><a href="ourservices.html">Our Services</a></div>
+                    <div class="menu-item"><a href="quality.html">Quality</a></div>
+                    <div class="menu-item"><a href="testimonials.html">Testimonials</a></div>
+                    <div class="menu-item"><a href="aboutus.html">About Us</a></div>
+                    <div class="menu-item-selected">Contact Us</div>
+                </div>
+            </nav>
+            </div>
+            <!-- Fin del menú -->
+        </header>
+    </section>
+    <!-- Fin del header -->
+
+    <!-- Comienzo del título de la página -->
+    <section class="headline-contactus">
+        <div class="textheadline">
+            <h1 class="title-headline">CONTACT US</h1>
+            <p class="welcome-text-black">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis ea, autem adipisci nulla dolor sint
+                officiis
+                corrupti deleniti eos accusamus unde fuga fugit atque vitae consequatur. Blanditiis beatae perferendis
+                quia.
+            </p>
+        </div>
+    </section>
+    <!-- Fin del título de la página -->
+
+    <!-- Comienzo del sector de contacto -->
+    <section id="contact">
+        <div class="title-form">
+            <h3>REQUEST A QUOTE</h3>
+        </div>
+        <div class="form-submission">
+            <!-- Formulario -->
+            <form action="form.php" method="post" class="contact-form">
+                <div class="form-row">
+                    <label for="full-name">Full name:</label>
+                    <input type="text" id="full-name" placeholder="e.g., John Doe" name="nombre" required>
+                </div>
+                <div class="form-row">
+                    <label for="email">Email address:</label>
+                    <input type="text" id="email" placeholder="e.g., hello@live.com" name="email">
+                </div>
+                <div class="form-row">
+                    <label for="phone-number">Phone number:</label>
+                    <input type="text" id="phone-number" placeholder="+1 (111) 111-1111" name="telefono">
+                </div>
+                <fieldset class="service-requested">
+                    <legend>Service(s) needed</legend>
+                    <input type="checkbox" name="traduccion" id="translation">
+                    <label for="translation" class="checkbox-label">Translation</label>
+
+                    <input type="checkbox" name="proofreading" id="proofreading">
+                    <label for="proofreading" class="checkbox-label">Proofreading</label>
+
+                    <input type="checkbox" name="subtitulado" id="subtitling">
+                    <label for="subtitling" class="checkbox-label">Subtitling</label>
+
+                    <input type="checkbox" name="transcripcion" id="transcription">
+                    <label for="transcription" class="checkbox-label">Transcription</label>
+
+                    <input type="checkbox" name="dtp" id="website-localization">
+                    <label for="website-localization" class="checkbox-label">Website Localization</label>
+                </fieldset>
+
+                <div class="form-row">
+                    <label for="source-language">Source language:</label>
+                    <textarea name="sourcelanguage" id="source-language"></textarea>
+                </div>
+
+                <div class="form-row">
+                    <label for="targetlanguage">Target language(s):</label>
+                    <textarea name="target-language" id="target-language"></textarea>
+                </div>
+
+                <label for="file">Please select your document:</label>
+                <input type="file" id="file" name="file">
+
+                <div class="form-row">
+                    <label for="source-language">Message:</label>
+                    <textarea name="message" id="message"></textarea>
+                </div>
+
+                <div class="form-row">
+                    <button type="submit">Submit</button>
+                </div>
+
+            </form>
+        </div>
+        <div class="description-quote">
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem impedit beatae voluptatum magni eveniet, labore minima repellat optio doloremque fugiat vero dignissimos repellendus rerum aspernatur voluptates voluptas repudiandae, aliquam accusantium.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis deleniti corrupti minus tempora, nihil aut recusandae ad quidem eius accusantium hic ut quisquam blanditiis, dolore a fugit asperiores maiores! Temporibus?
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            </p>
+            <div class="location">
+                <p><a href="aboutus.html#location">Where are we?</a></p>
+            </div>
+            <div class="image-contact">
+                <img class="image-contactus" src="../images/christina-wocintechchat-com-dKBTFoarrOU-unsplash.jpg" alt="Roll Translations logo">
+            </div>
+        </div>
+
+    </section>
+    <!-- Fin del sector de contacto -->
+
+    <!-- Comienzo del footer -->
+    <section id="footer">
+        <footer>
+            <!-- Comienzo del menú -->
+            <div class="footer-container">
+                <div class="menu-footer">
+                    <nav>
+                        <ul id="menu-footer">
+                            <li>
+                                <h3>Quick Links</h3>
+                            </li>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="ourservices.html">Our Services</a></li>
+                            <li><a href="quality.html">Quality</a></li>
+                            <li><a href="testimonials.html">Testimonials</a></li>
+                            <li><a href="aboutus.html">About Us</a></li>
+                            <li>Contact Us</li>
+                        </ul>
+                    </nav>
+                </div>
+                <!-- Fin del menú -->
+                <!-- Comienzo de link útiles -->
+                <div class="go-top">
+                    <p><a href="#top">Go back to the top</a></p>
+                </div>
+                <div class="pay-paypal">
+                    <p class="button"><a href="https://www.paypal.com">PAY WITH PAYPAL</a></p>
+                </div>
+                <!-- Fin de botones útiles -->
+                <!-- Comienzo de información de contacto -->
+                <div class="contact-footer">
+                    <h3>Contact Us</h3>
+                    <p>Address 1234, State, ZIP, US</p>
+                    <p>+1 (111) 111-1111</p>
+                    <p>contact@rolltranslations.com</p>
+                </div>
+                <!-- Fin de información de contacto -->
+            </div>
+        </footer>
+    </section>
+    <!-- Fin del footer -->
+
+</body>
+
+</html>

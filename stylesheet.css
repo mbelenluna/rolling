@@ -1,0 +1,1053 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* Fuentes */
+
+@font-face {
+    font-family: parrafos;
+    src: url(fonts/Heebo-Light.ttf);
+}
+
+@font-face {
+    font-family: titulos1;
+    src: url(fonts/Heebo-Bold.ttf);
+}
+
+@font-face {
+    font-family: titulos2;
+    src: url(fonts/Heebo-Medium.ttf);
+}
+
+@font-face {
+    font-family: titulos3;
+    src: url(fonts/Heebo-Regular.ttf);
+}
+
+@font-face {
+    font-family: links;
+    src: url(fonts/Heebo-SemiBold.ttf);
+}
+
+/* Estilos de títulos y párrafos */
+
+h1 {
+    font-family: titulos1;
+    color: #1b74bc;
+    text-align: center;
+    font-size: x-large;
+}
+
+h2 {
+    font-family: titulos2;
+    color: #1b74bc;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+h3 {
+    font-family: titulos3;
+    color: #1b74bc;
+}
+
+p {
+    font-family: parrafos;
+}
+
+a {
+    color: rgb(103, 177, 237);
+    text-decoration: none;
+}
+
+/* Header (todas las páginas) */
+
+.menu {
+    display: grid;
+    grid-template-areas:
+    "logo menuitem1 menuitem2 menuitem3 menuitem4 menuitem5 menuitem6";
+    grid-template-columns: repeat(7,fr);
+    grid-template-rows: auto;
+    justify-content: space-around;
+    align-items: center;    
+}
+
+.blanco {
+    grid-area: blanco;
+}
+
+.logo {
+    grid-area: logo;
+}
+
+#menuitem1 {
+    grid-area: menuitem1;
+    color: #1b74bc;
+}
+
+#menuitem2 {
+    grid-area: menuitem2;
+}
+
+#menuitem3 {
+    grid-area: menuitem3;
+}
+
+#menuitem4 {
+    grid-area: menuitem4;
+}
+
+#menuitem5 {
+    grid-area: menuitem5;
+}
+
+#menuitem6 {
+    grid-area: menuitem6;
+}
+
+.menu-item {
+    font-family: titulos3;
+    font-weight: bold;
+}
+
+.menu-item-selected {
+    font-family: titulos3;
+    font-weight: bold;
+    color: #458eb5;
+}
+
+ul li {
+    font-family: parrafos;
+    color: white;
+}
+
+#header {
+    top: 0;
+    position: sticky;
+    background-color: white;
+}
+
+/* Presentación (headline) del home */
+
+.headline {
+    background-color: black;
+    background-size: cover;
+    padding: 10rem 3rem 10rem 3rem;
+    display: grid;
+    grid-template-areas:
+    "title-headline"
+    "welcome"
+    "button";
+    grid-template-rows: repeat(3,fr);
+}
+
+.title-headline {
+    grid-area: title-headline;
+}
+
+.welcome-text {
+    grid-area: welcome;
+    padding: 1rem;
+    text-align: center;
+    font-weight: bold;
+    color: white;
+}
+
+.textheadline {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.button {
+    font-family: links;
+    color: #1762b9;
+    font-weight: bold;
+    font-size: larger;
+    display: inline-block;
+    border-style: solid;
+    color: #1b74bc;
+    border-radius: 10px;
+    grid-area: button;
+    font-size: 20px;
+    background-color: white;
+    padding: 10px 40px;
+    cursor: pointer;
+    max-width: 400px;
+}
+
+.button a {
+    color: black;
+}
+
+.button:hover {
+    background-color: #1b74bc;
+}
+
+/* Lista de servicios (Main Services) */
+
+
+.moreinfo {
+    text-align: center;
+}
+
+.serviceslist-container-home {
+    display: grid;
+    grid-template-areas:
+    "title title"
+    "translation interpretation"
+    "subtitling subtitling"
+    "viewall viewall";
+    width: auto;
+    grid-template-columns: 30% 30%;
+    grid-template-rows: auto auto auto auto;
+    justify-content: center;
+}
+
+.grid-title {
+    grid-area: title;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.grid-translation {
+    grid-area: translation;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.grid-interpretation {
+    grid-area: interpretation;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.grid-subtitling {
+    grid-area: subtitling;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.grid-viewall {
+    grid-area: viewall;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Lista de idiomas (Languages we handle) */
+
+.languages-container {
+    display: grid;
+    grid-template-areas:
+    "languages-title language-title language-title"
+    "language-list1 language-list2 language-list3";
+    grid-template-columns: repeat(3,fr);
+}
+
+.languages-title {
+    grid-area: languages-title;
+}
+
+.language-list1 {
+    grid-area: language-list1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+}
+
+.language-list2 {
+    grid-area: language-list2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+}
+
+.language-list3 {
+    grid-area: language-list3;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+}
+
+#languages {
+    background-image: url(images/network-g372f2b35e_1280.png);
+}
+
+.languagelist-title {
+    font-weight: bold;
+    padding: 1rem;
+    color: #1b74bc;
+}
+
+/* Sección de Testimonials */
+
+.testimonials-container-home {
+    background-color: white;
+    text-align: center;
+    display: grid;
+    grid-template-areas: 
+    "testimonials-title testimonials-title"
+    "testimonial1 testimonial2"
+    "moreinfo-testimonials moreinfo-testimonials";
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto 1fr 0.5fr;
+}
+
+.testimonials-title {
+    grid-area: testimonials-title;
+    display: flex;
+    justify-content: center;
+}
+
+#testimonial1 {
+    grid-area: testimonial1;
+}
+
+#testimonial2 {
+    grid-area: testimonial2;
+}
+
+.testimonial {
+    padding: 50px 50px 1rem 50px;
+}
+
+.moreinfo-testimonials {
+    grid-area: moreinfo-testimonials;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+
+/* Footer (todas las páginas) */
+
+.footer-container {
+    display: grid;
+    grid-template-areas:
+    "menu go-top contact-footer"
+    "menu pay-paypal contact-footer";
+    grid-template-columns: repeat(3,fr);
+    grid-template-rows: 1fr 1fr;
+    background-color: black
+}
+
+.menu-footer {
+    padding: 1rem 0 1rem 0;
+    grid-area: menu;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+.go-top {
+    grid-area: go-top;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pay-paypal {
+    grid-area: pay-paypal;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-footer {
+    padding: 1rem 0 1rem 0;
+    grid-area: contact-footer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+}
+
+#menu-footer li {
+    list-style-type: none;
+    padding-left: 10px;
+    padding-bottom: 10px;
+}
+
+/* Testimonials page */
+
+/* Presentación (headline) de Testimonials */
+
+.headline-testimonials {
+    background-color: black;
+    background-size: cover;
+    padding: 5rem 3rem 5rem 3rem;
+    display: grid;
+    grid-template-areas:
+    "title-headline"
+    "welcome-text";
+}
+
+.testimonials-container {
+    text-align: center;
+    display: grid;
+    grid-template-areas: 
+    "test-1 test-2"
+    "test-3 test-4";
+    grid-template-columns: 40% 40%;
+    grid-template-rows: 1fr 1fr;
+    justify-content: center;
+}
+
+.client-logo {
+    width: 10%;
+}
+
+/* Services Page */
+
+/* Presentación (headline) de Our Services */
+.headline-ourservices {
+    background-color: black;
+    background-size: cover;
+    padding: 5rem 3rem 5rem 3rem;
+    display: grid;
+    grid-template-areas:
+    "title-headline"
+    "welcome-text";
+}
+
+/* Body de Our Services */
+
+.service-description {
+    margin: 1rem;
+    text-align: justify;
+}
+
+.service {
+    max-width: 95%;
+    padding-top: 1em;
+}
+
+.serviceslist-container {
+    display: grid;
+    grid-template-areas:
+    "service-gtranslation service-ltranslation" "service-mtranslation service-subtitling" "service-transcription service-website";
+    width: 100%;
+    grid-template-columns: 0.4fr 0.4fr;
+    justify-content: center;
+    align-items: center;
+}
+
+.service-gtranslation {
+    grid-area: service-gtranslation;
+    margin: 30px;
+    text-align: justify;
+}
+
+.service-ltranslation {
+    grid-area: service-ltranslation;
+    margin: 30px;
+    text-align: justify;
+}
+
+.service-subtitling {
+    grid-area: service-subtitling;
+    margin: 30px;
+    text-align: justify;
+}
+
+.service-transcription {
+    grid-area: service-transcription;
+    margin: 30px;
+    text-align: justify;
+}
+
+.service-website {
+    grid-area: service-website;
+    margin: 30px;
+    text-align: justify;
+}
+
+.service-mtranslation {
+    grid-area: service-mtranslation;
+    margin: 30px;
+    text-align: justify;
+}
+
+/* Quality page */
+
+/* Presentación (headline) de Quality */
+
+.headline-quality {
+    background-image: url(images/austin-distel-wawEfYdpkag-unsplash.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 10rem 3rem 10rem 3rem;
+}
+
+.welcome-text-black p {
+    color: black;
+    padding: 1rem;
+    font-weight: bolder;
+}
+
+/* Body de Quality */
+
+#body-ourprocess {
+    margin: 2rem;
+    text-align: justify;
+    display: grid;
+    grid-template-areas: 
+    "ourprocess-title"
+    "ourprocess"
+    "image-ourprocess";
+    grid-template-columns: 70%;
+    justify-content: center;
+}
+
+.ourprocess-title {
+    grid-area: ourprocess-title;
+}
+
+.ourprocess {
+    grid-area: ourprocess;
+}
+
+.image-ourprocess {
+    grid-area: image-ourprocess;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.quality-img {
+    width: 100%;
+    padding-bottom: 2rem;
+}
+
+/* About Us page */
+
+/* Presentación (headline) de About Us */
+
+.headline-aboutus {
+    background-color: black;
+    background-size: cover;
+    padding: 5rem 3rem 5rem 3rem;
+    display: grid;
+    grid-template-areas:
+    "title-headline"
+    "welcome-text";
+}
+
+/* Body de About Us */
+
+.aboutus-container {
+    display: grid;
+    grid-template-areas:
+    "aboutus-photo1 aboutus-paragraph1"
+    "aboutus-paragraph2 aboutus-photo2";
+    grid-template-columns: 40% 40%;
+    justify-content: center;
+}
+
+.aboutus-photo1 {
+    grid-area: aboutus-photo1;
+    margin: 1rem;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+
+.aboutus-photo2 {
+    grid-area: aboutus-photo2;
+    margin: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.aboutus-paragraph1 {
+    grid-area: aboutus-paragraph1;
+}
+
+.aboutus-paragraph2 {
+    grid-area: aboutus-paragraph2;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: center;
+}
+
+.aboutus {
+    display: flex;
+    align-content: center;
+}
+
+.standard {
+    width: 60%;
+    max-height: 250px;
+    min-width: 300px;
+}
+
+.aboutus-paragraph {
+    text-align: justify;
+    margin: 2rem;
+}
+
+.location-container {
+    background-color: lavender;
+    display: grid;
+    grid-template-areas:
+    "map our-location";
+    grid-template-columns: 1fr 1fr;
+}
+
+.map-responsive {
+    margin: 50px;
+    grid-area: map;
+    overflow:hidden;
+    padding-bottom:56.25%;
+    position:relative;
+    height:0;
+}
+
+.map-responsive iframe {
+    left:0;
+    top:0;
+    height:100%;
+    width:100%;
+    position:absolute;
+}
+
+.our-location {
+    grid-area: our-location;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+}
+
+/* Contact Us Page */
+
+/* Presentación (headline) de Contact Us */
+
+.headline-contactus {
+    background-image: url(images/damian-zaleski-RYyr-k3Ysqg-unsplash.jpg);
+    background-size: cover;
+    padding: 10rem 3rem 10rem 3rem;
+}
+
+/*Body de Contact Us */
+
+.contact-form {
+    background-color: lightcyan;
+    width: 80%;
+    margin: 3rem;
+    grid-area: form;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.form-row {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding: 0.5rem 0 0.5rem 0;
+    min-width: 100%;
+}
+
+.form-row input[type="text"] {
+    font-size: 14px;
+    border: 1px solid gray;
+    min-height: 30px;
+}
+
+.form-row textarea {
+    resize: none;
+    border: 1px solid gray;
+    min-height: 50px;
+    min-width: 300px;
+}
+
+.form-row button {
+    font-size: 20px;
+    font-weight: bold;
+    color: turquoise;
+    background-color: black;
+    padding: 10px 40px;
+    cursor: pointer;
+    max-width: 200px;
+}
+
+.form-row button:hover {
+    background-color: #1c84c9;
+}
+
+.form-row button:active {
+    background-color: white;
+}
+
+.title-form {
+    grid-area: title-form;
+    text-align: center;
+    margin: 2rem;
+    border-radius: 3px;
+    border: 1px solid gray;
+    padding: 25px;
+}
+
+.location {
+    text-align: center;
+    margin: 2rem;
+}
+
+.description-quote {
+    grid-area: description-quote;
+    text-align: justify;
+    padding-right: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+#contact {
+    font-family: parrafos;
+    display: grid;
+    grid-template-areas:
+    "title-form title-form"
+    "form description-quote"
+    "form description-quote";
+    grid-template-columns: 60% 30%;
+    justify-content: center;
+}
+
+.image-contactus {
+    width: 100%;
+}
+
+/* GRID INDEX */
+
+.body-index {
+    display: grid;
+    grid-template-areas:
+    "header"
+    "headline"
+    "services"
+    "languages"
+    "sometestimonials"
+    "footer";
+}
+
+#header {
+    grid-area: header;
+}
+
+.headline {
+    grid-area: headline;
+}
+
+#services {
+    grid-area: services;
+}
+
+#languages {
+    grid-area: languages;
+}
+
+#sometestimonials {
+    grid-area: sometestimonials;
+}
+
+#footer {
+    grid-area: footer;
+}
+
+/* GRID ABOUT US */
+
+#body-aboutus {
+    display: grid;
+    grid-template-areas: 
+    "header"
+    "headline-aboutus"
+    "body-aboutus"
+    "location"
+    "footer";
+}
+
+.headline-aboutus {
+    grid-area: headline-aboutus;
+}
+
+#body-aboutus {
+    grid-area: body-aboutus;
+}
+
+#location {
+    grid-area: location;
+}
+
+/* GRID CONTACT US */
+
+.body-contactus {
+    display: grid;
+    grid-template-areas:
+    "header"
+    "headline-contactus"
+    "contact"
+    "footer";
+}
+
+.headline-contactus {
+    grid-area: headline-contactus;
+}
+
+#contact {
+    grid-area: contact;
+}
+
+/* GRID OUR SERVICES */
+
+.body-ourservices {
+    display: grid;
+    grid-template-areas:
+    "header"
+    "headline-ourservices"
+    "services"
+    "footer";
+}
+
+.headline-ourservices {
+    grid-area: headline-ourservices;
+}
+
+
+/* GRID QUALITY */
+
+.body-quality {
+    display: grid;
+    grid-template-areas:
+    "header"
+    "headline-quality"
+    "body-ourprocess"
+    "footer";
+}
+
+.headline-quality {
+    grid-area: headline-quality;
+}
+
+#body-ourprocess {
+    grid-area: body-ourprocess;
+}
+
+
+/* GRID TESTIMONIALS */
+
+.body-testimonials {
+    display: grid;
+    grid-template-areas:
+    "header"
+    "headline-testimonials"
+    "body-testimonialspage"
+    "footer";
+}
+
+.headline-testimonials {
+    grid-area: headline-testimonials;
+}
+
+#body-testimonialspage {
+    grid-area: body-testimonialspage;
+}
+
+/* Full Responsive */
+
+@media screen and (max-width:768px) {
+    /*Todas las paginas */
+    .menu {
+        display: grid;
+        grid-template-areas:
+        "logo menuitem1 menuitem2 menuitem3"
+        "logo menuitem4 menuitem5 menuitem6";
+        grid-template-columns: repeat(4,fr);
+        grid-template-rows: 1fr 1fr;
+        justify-content: space-around;
+        align-items: center;    
+    }
+
+    .headline {
+        background-image: url(images/work-5382501_640.webp);
+        background-repeat: no-repeat;
+        background-size: cover;
+        padding: 5rem 2rem 5rem 2rem;
+        display: grid;
+        grid-template-areas:
+        "title-headline"
+        "welcome"
+        "button";
+        grid-template-rows: repeat(3,fr);
+    }
+
+    .footer-container {
+        display: grid;
+        grid-template-areas:
+        "menu go-top"
+        "menu pay-paypal"
+        "menu contact-footer";
+        grid-template-columns: repeat(2,fr);
+        grid-template-rows: auto auto auto;
+        background-color: rgb(176, 230, 230);
+    }
+
+    /*Home Page */
+
+    .serviceslist-container-home {
+        display: grid;
+        grid-template-areas:
+        "title"
+        "translation"
+        "interpretation"
+        "subtitling"
+        "viewall";
+        grid-template-rows: 0.2fr 0.4fr 0.4fr 0.4fr auto;
+        grid-template-columns: 100%;
+    }
+
+    .languages-container {
+        display: grid;
+        grid-template-areas:
+        "languages-title"
+        "language-list1"
+        "language-list2"
+        "language-list3";
+        grid-template-rows: auto auto auto auto;
+    }
+
+    .testimonials-container-home {
+        display: grid;
+        grid-template-areas: 
+        "testimonials-title"
+        "testimonial1"
+        "testimonial2"
+        "moreinfo-testimonials";
+        grid-template-columns: 100%;
+        grid-template-rows: auto 1fr 1fr auto;
+    }
+
+/* Our Services page */
+
+    .serviceslist-container {
+        display: grid;
+        grid-template-areas:
+        "service-gtranslation"
+        "service-ltranslation"
+        "service-mtranslation"
+        "service-subtitling"
+        "service-transcription"
+        "service-website";
+        grid-template-columns: auto;
+    }
+
+    .service {
+        width: 90%;
+        margin: 1rem;
+        max-width: 450px;
+    }
+
+    /* Testimonials page */ 
+
+    .testimonial {
+        padding: 1rem;
+    }
+
+    .testimonials-container {
+        text-align: center;
+        display: grid;
+        grid-template-areas: 
+        "test-1"
+        "test-2"
+        "test-3"
+        "test-4";
+        grid-template-columns: auto;
+    }
+    
+    #test-1 {
+        grid-area: test-1;
+    }
+    
+    #test-2 {
+        grid-area: test-2;
+    }
+    
+    #test-3 {
+        grid-area: test-3;
+    }
+    
+    #test-4 {
+        grid-area: test-4;
+    }
+    
+
+    /* About Us page */
+
+    .aboutus-container {
+        display: grid;
+        grid-template-areas:
+        "aboutus-paragraph1"
+        "aboutus-photo1"
+        "aboutus-paragraph2"
+        "aboutus-photo2";
+        grid-template-columns: 100%;
+    }
+
+    .standard {
+        width: 100%;
+        max-height: 100%;
+    }
+
+    .location-container {
+        display: grid;
+        grid-template-areas:
+        "map"
+        "our-location";
+        grid-template-columns: auto;
+        grid-template-rows: 1fr;
+    }
+
+    .our-location {
+        text-align: center;
+        margin: 1rem;
+    }
+
+    /* Contact us page */
+
+    #contact {
+        font-family: parrafos;
+        display: grid;
+        grid-template-areas:
+        "title-form"
+        "form "
+        "description-quote";
+        grid-template-columns: 100%;
+        justify-content: center;
+    }
+
+    .description-quote {
+        margin: 2rem;
+    }
+
+}
