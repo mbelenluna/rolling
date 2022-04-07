@@ -34,9 +34,13 @@
 
 h1 {
     font-family: titulos1;
-    color: #1b74bc;
+    color: hsl(207, 100%, 83%);
     text-align: center;
-    font-size: x-large;
+    font-size: 35px;
+}
+
+.darker-blue {
+    color: #1b74bc;
 }
 
 h2 {
