@@ -394,7 +394,7 @@ ul li {
 /* Presentación (headline) de Testimonials */
 
 .headline-testimonials {
-    background-color: black;
+    background: linear-gradient(to bottom right, black, #1b74bc);
     background-size: cover;
     padding: 5rem 3rem 5rem 3rem;
     display: grid;
@@ -422,7 +422,7 @@ ul li {
 
 /* Presentación (headline) de Our Services */
 .headline-ourservices {
-    background-color: black;
+    background: linear-gradient(to bottom right, black, #1b74bc);
     background-size: cover;
     padding: 5rem 3rem 5rem 3rem;
     display: grid;
@@ -558,7 +558,7 @@ ul li {
 /* Presentación (headline) de About Us */
 
 .headline-aboutus {
-    background-color: black;
+    background: linear-gradient(to bottom right, black, #1b74bc);
     background-size: cover;
     padding: 5rem 3rem 5rem 3rem;
     display: grid;
