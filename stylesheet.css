@@ -523,6 +523,7 @@ ul li {
     grid-template-areas: 
     "ourprocess-title"
     "ourprocess"
+    "steps"
     "image-ourprocess";
     grid-template-columns: 70%;
     justify-content: center;
@@ -534,6 +535,10 @@ ul li {
 
 .ourprocess {
     grid-area: ourprocess;
+}
+
+.steps {
+    grid-area: steps;
 }
 
 .image-ourprocess {
