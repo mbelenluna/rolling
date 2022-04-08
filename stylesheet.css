@@ -887,8 +887,16 @@ ul li {
         display: none;
     }
 
+    body {
+        padding-top: 110px;
+    }
+
     .navbar {
         display: block;
+    }
+
+    .dicreased {
+        width: 60%;
     }
 
     .headline {
@@ -904,7 +912,6 @@ ul li {
         "menu contact-footer";
         grid-template-columns: repeat(2,fr);
         grid-template-rows: auto auto auto;
-        background-color: rgb(176, 230, 230);
     }
 
     /*Home Page */
