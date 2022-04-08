@@ -77,6 +77,10 @@ a {
     align-items: center;    
 }
 
+.navbar {
+    display: none;
+}
+
 .blanco {
     grid-area: blanco;
 }
@@ -141,12 +145,6 @@ ul li {
     background-color: black;
     background-size: cover;
     padding: 10rem 3rem 10rem 3rem;
-    display: grid;
-    grid-template-areas:
-    "title-headline"
-    "welcome"
-    "button";
-    grid-template-rows: repeat(3,fr);
 }
 
 .title-headline {
@@ -161,19 +159,12 @@ ul li {
     color: white;
 }
 
-.textheadline {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-}
-
 .button {
     font-family: links;
+    text-align: center;
     color: #1762b9;
     font-weight: bold;
     font-size: larger;
-    display: inline-block;
     border-style: solid;
     color: #1b74bc;
     border-radius: 10px;
@@ -258,13 +249,7 @@ ul li {
 
 /* Lista de idiomas (Languages we handle) */
 
-.languages-container {
-    display: grid;
-    grid-template-areas:
-    "languages-title language-title language-title"
-    "language-list1 language-list2 language-list3";
-    grid-template-columns: repeat(3,fr);
-}
+
 
 .languages-title {
     grid-area: languages-title;
@@ -899,27 +884,16 @@ ul li {
 @media screen and (max-width:768px) {
     /*Todas las paginas */
     .menu {
-        display: grid;
-        grid-template-areas:
-        "logo menuitem1 menuitem2 menuitem3"
-        "logo menuitem4 menuitem5 menuitem6";
-        grid-template-columns: repeat(4,fr);
-        grid-template-rows: 1fr 1fr;
-        justify-content: space-around;
-        align-items: center;    
+        display: none;
+    }
+
+    .navbar {
+        display: block;
     }
 
     .headline {
-        background-image: url(images/work-5382501_640.webp);
-        background-repeat: no-repeat;
         background-size: cover;
         padding: 5rem 2rem 5rem 2rem;
-        display: grid;
-        grid-template-areas:
-        "title-headline"
-        "welcome"
-        "button";
-        grid-template-rows: repeat(3,fr);
     }
 
     .footer-container {
@@ -945,16 +919,6 @@ ul li {
         "viewall";
         grid-template-rows: 0.2fr 0.4fr 0.4fr 0.4fr auto;
         grid-template-columns: 100%;
-    }
-
-    .languages-container {
-        display: grid;
-        grid-template-areas:
-        "languages-title"
-        "language-list1"
-        "language-list2"
-        "language-list3";
-        grid-template-rows: auto auto auto auto;
     }
 
     .testimonials-container-home {

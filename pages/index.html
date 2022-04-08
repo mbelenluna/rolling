@@ -5,8 +5,6 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <!-- CSS -->
-    <link rel="stylesheet" href="../stylesheet.css">
 
     <!-- Librería de animaciones scroll -->
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
@@ -14,6 +12,9 @@
     <!-- Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 
+        <!-- CSS -->
+        <link rel="stylesheet" href="../stylesheet.css">
+        
     <title>Home</title>
 </head>
 
@@ -39,24 +40,76 @@
             </nav>
             </div>
             <!-- Fin del menú -->
+            <!-- Comienzo del menú responsive -->
+            <nav class="navbar navbar-light bg-light fixed-top">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="index.html">Rolling Translations</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                        data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+                        aria-labelledby="offcanvasNavbarLabel">
+                        <div class="offcanvas-header">
+                            <h5 class="offcanvas-title" id="offcanvasNavbarLabel"><img src="../images/logo.png" alt="Rolling Translations logo"></h5>
+                            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
+                                aria-label="Close"></button>
+                        </div>
+                        <div class="offcanvas-body">
+                            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                                <li class="nav-item">
+                                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="ourservices.html">Our Services</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="quality.html">Quality</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="testimonials.html">Testimonials</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="aboutus.html">About Us</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="contactus.html">Contact Us</a>
+                                </li>
+                            </ul>
+                            <form class="d-flex">
+                                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                                <button class="btn btn-outline-success" type="submit">Search</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </nav>
         </header>
     </section>
     <!-- Fin del header -->
 
     <!-- Comienzo del título de la página -->
     <section class="headline">
-        <div class="textheadline">
-            <h1 class="title-headline darker-blue" >ROLLING TRANSLATIONS</h1>
-            <div class="welcome-text">
-                <p class="welcome">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis ea, autem adipisci nulla dolor sint
-                    officiis
-                    corrupti deleniti eos accusamus unde fuga fugit atque vitae consequatur. Blanditiis beatae perferendis
-                    quia.
-                </p>
-            </div>
-            <div class="button">
-                <a href="contactus.html">REQUEST A QUOTE NOW</a>
+        <div class="textheadline container">
+            <div class="row d-flex justify-content-center text-center">
+                <div class="col-12">
+                    <div">
+                        <h1 class="title-headline darker-blue">ROLLING TRANSLATIONS</h1>
+                    </div>
+                    <div class="welcome-text">
+                        <p class="welcome">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis ea, autem adipisci nulla
+                            dolor sint
+                            officiis
+                            corrupti deleniti eos accusamus unde fuga fugit atque vitae consequatur. Blanditiis beatae
+                            perferendis
+                            quia.
+                        </p>
+                    </div>
+                    <div class="button">
+                        <a href="contactus.html">REQUEST A QUOTE NOW</a>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
@@ -105,44 +158,46 @@
         <div class="languages-title">
             <h2>Languages we handle</h2>
         </div>
-        <div class="languages-container">
-            <div class="language-list1">
-                <p class="languagelist-title">Translation</p>
-                <ul>
-                    <li>Spanish</li>
-                    <li>Traditional Chinese</li>
-                    <li>Simplified Chinese</li>
-                    <li>Korean</li>
-                    <li>Armenian</li>
-                    <li>Japanese</li>
-                    <li>Farsi</li>
-                    <li>Arabic</li>
-                    <li>French</li>
-                </ul>
-            </div>
-            <div class="language-list2">
-                <p class="languagelist-title">Transcription</p>
-                <ul>
-                    <li>Spanish</li>
-                    <li>Traditional Chinese</li>
-                    <li>Simplified Chinese</li>
-                    <li>Korean</li>
-                    <li>Farsi</li>
-                </ul>
-            </div>
-            <div class="language-list3">
-                <p class="languagelist-title">Subtitling</p>
-                <ul>
-                    <li>Spanish</li>
-                    <li>Traditional Chinese</li>
-                    <li>Simplified Chinese</li>
-                    <li>Korean</li>
-                    <li>Armenian</li>
-                    <li>Japanese</li>
-                    <li>Farsi</li>
-                    <li>Arabic</li>
-                    <li>French</li>
-                </ul>
+        <div class="languages-container container">
+            <div class="row">
+                <div class="language-list1 col-12 col-sm-6 col-md-4">
+                    <p class="languagelist-title">Translation</p>
+                    <ul>
+                        <li>Spanish</li>
+                        <li>Traditional Chinese</li>
+                        <li>Simplified Chinese</li>
+                        <li>Korean</li>
+                        <li>Armenian</li>
+                        <li>Japanese</li>
+                        <li>Farsi</li>
+                        <li>Arabic</li>
+                        <li>French</li>
+                    </ul>
+                </div>
+                <div class="language-list2 col-12 col-sm-6 col-md-4">
+                    <p class="languagelist-title">Transcription</p>
+                    <ul>
+                        <li>Spanish</li>
+                        <li>Traditional Chinese</li>
+                        <li>Simplified Chinese</li>
+                        <li>Korean</li>
+                        <li>Farsi</li>
+                    </ul>
+                </div>
+                <div class="language-list3 col-12 col-sm-12 col-md-4">
+                    <p class="languagelist-title">Subtitling</p>
+                    <ul>
+                        <li>Spanish</li>
+                        <li>Traditional Chinese</li>
+                        <li>Simplified Chinese</li>
+                        <li>Korean</li>
+                        <li>Armenian</li>
+                        <li>Japanese</li>
+                        <li>Farsi</li>
+                        <li>Arabic</li>
+                        <li>French</li>
+                    </ul>
+                </div>
             </div>
         </div>
     </section>
