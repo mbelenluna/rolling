@@ -407,6 +407,18 @@ ul li {
     width: 10%;
 }
 
+#carouselExampleSlidesOnly {
+    height: 223px;
+    width: 226px;
+}
+
+.our-clients {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
 /* Services Page */
 
 /* Presentación (headline) de Our Services */
@@ -868,6 +880,7 @@ ul li {
     "header"
     "headline-testimonials"
     "body-testimonialspage"
+    "clients-logos"
     "footer";
 }
 
@@ -879,6 +892,11 @@ ul li {
     grid-area: body-testimonialspage;
 }
 
+.clients-logos {
+    grid-area: clients-logos;
+    padding-bottom: 1rem;
+}
+
 /* Full Responsive */
 
 @media screen and (max-width:768px) {
@@ -888,7 +906,7 @@ ul li {
     }
 
     body {
-        padding-top: 110px;
+        padding-top: 150px;
     }
 
     .navbar {
