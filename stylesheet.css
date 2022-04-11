@@ -932,6 +932,10 @@ ul li {
         grid-template-rows: auto auto auto;
     }
 
+    .button {
+        padding: 1rem;
+    }
+
     /*Home Page */
 
     .serviceslist-container-home {
