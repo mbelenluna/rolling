@@ -153,7 +153,6 @@ ul li {
 
 .welcome-text {
     grid-area: welcome;
-    padding: 1rem;
     text-align: center;
     font-weight: bold;
     color: white;
@@ -300,7 +299,7 @@ ul li {
     "testimonial1 testimonial2"
     "moreinfo-testimonials moreinfo-testimonials";
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: auto 1fr 0.5fr;
+    grid-template-rows: auto 1fr auto;
 }
 
 .testimonials-title {
@@ -326,6 +325,7 @@ ul li {
     display: flex;
     align-content: center;
     justify-content: center;
+    padding: 1rem;
 }
 
 /* Footer (todas las páginas) */
@@ -374,7 +374,6 @@ ul li {
 
 #menu-footer li {
     list-style-type: none;
-    padding-left: 10px;
     padding-bottom: 10px;
 }
 
@@ -509,10 +508,11 @@ ul li {
     padding: 10rem 3rem 10rem 3rem;
 }
 
-.welcome-text-black p {
+.welcome-text-black {
     color: black;
     padding: 1rem;
     font-weight: bolder;
+    text-align: center;
 }
 
 /* Body de Quality */
@@ -977,6 +977,30 @@ ul li {
         max-width: 450px;
     }
 
+    .service-gtranslation {
+        margin: 0 1rem 0 1rem;
+    }
+    
+    .service-ltranslation {
+        margin: 0 1rem 0 1rem;
+    }
+    
+    .service-subtitling {
+        margin: 0 1rem 0 1rem;
+    }
+    
+    .service-transcription {
+        margin: 0 1rem 0 1rem;
+    }
+    
+    .service-website {
+        margin: 0 1rem 0 1rem;
+    }
+    
+    .service-mtranslation {
+        margin: 0 1rem 0 1rem;
+    }
+
     /* Testimonials page */ 
 
     .testimonial {
@@ -1057,6 +1081,10 @@ ul li {
 
     .description-quote {
         margin: 2rem;
+    }
+
+    .go-top {
+        padding-top: 1rem;
     }
 
 }
