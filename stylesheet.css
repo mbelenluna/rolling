@@ -194,7 +194,7 @@ ul li {
     display: grid;
     grid-template-areas:
     "title title"
-    "translation interpretation"
+    "translation transcription"
     "subtitling subtitling"
     "viewall viewall";
     width: auto;
@@ -220,8 +220,8 @@ ul li {
     flex-direction: column;
 }
 
-.grid-interpretation {
-    grid-area: interpretation;
+.grid-transcription {
+    grid-area: transcription;
     background-color: white;
     display: flex;
     justify-content: center;
@@ -414,7 +414,7 @@ ul li {
 .our-clients {
     display: flex;
     justify-content: center;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
 }
 
@@ -933,7 +933,7 @@ ul li {
     }
 
     .button {
-        padding: 1rem;
+        padding: 0.5rem;
     }
 
     /*Home Page */
@@ -1097,5 +1097,4 @@ ul li {
         padding: 0;
         margin: 0;
     }
-
 }
