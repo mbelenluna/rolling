@@ -1107,6 +1107,9 @@ ul li {
 }
 
 @media screen and (max-width:346px) {
+
+    /* Todas las páginas */
+
     .footer-container {
         display: grid;
         grid-template-areas:
@@ -1117,15 +1120,30 @@ ul li {
         grid-template-columns: 100%;
         grid-template-rows: auto auto auto auto;
     }
+    
+    h1 {
+        font-size: 25px;
+    }
+
+    h2 {
+        font-size: 15px;
+    }
+
+    /* Testimonials */ 
 
     #carouselExampleSlidesOnly {
         width: 50%;
     }
+
+    /* Quality */
+
     .standard {
         width: 100%;
         max-height: auto;
         min-width: auto;
     }
+
+    /* Contact Us */
 
     .form-row textarea {
         min-height: 50px;
@@ -1142,9 +1160,5 @@ ul li {
 
     .form-submission {
         font-size: 11px;
-    }
-
-    h1 {
-        font-size: 25px;
     }
 }
