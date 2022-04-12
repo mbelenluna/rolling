@@ -434,7 +434,7 @@ ul li {
 /* Body de Our Services */
 
 .service-description {
-    margin: 1rem;
+    margin: 2rem;
     text-align: justify;
 }
 
@@ -558,6 +558,10 @@ ul li {
 .quality-img {
     width: 100%;
     padding-bottom: 2rem;
+}
+
+.quality-container {
+    background-color: white;
 }
 
 /* About Us page */
@@ -851,7 +855,7 @@ ul li {
     "headline-ourservices"
     "services"
     "footer";
-    background-color: #458eb5;
+    background-color: #bed5e7;
 }
 
 .headline-ourservices {
@@ -868,6 +872,7 @@ ul li {
     "headline-quality"
     "body-ourprocess"
     "footer";
+    background-color: #bed5e7;
 }
 
 .headline-quality {
@@ -876,6 +881,7 @@ ul li {
 
 #body-ourprocess {
     grid-area: body-ourprocess;
+    margin: 0;
 }
 
 
@@ -1070,7 +1076,7 @@ ul li {
         grid-template-areas:
         "map"
         "our-location";
-        grid-template-columns: auto;
+        grid-template-columns: 70%;
         grid-template-rows: 1fr;
     }
 
