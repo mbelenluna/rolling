@@ -452,50 +452,55 @@ ul li {
 }
 
 .serviceslist-container {
-    display: grid;
-    grid-template-areas:
-    "service-gtranslation service-ltranslation" "service-mtranslation service-subtitling" "service-transcription service-website";
     width: 100%;
-    grid-template-columns: 0.4fr 0.4fr;
     justify-content: center;
     align-items: center;
+    background-color: white;
 }
 
 .service-gtranslation {
-    grid-area: service-gtranslation;
-    margin: 30px;
+    padding: 2rem;
     text-align: justify;
+    display: flex;
+    justify-content: start;
 }
 
 .service-ltranslation {
-    grid-area: service-ltranslation;
     margin: 30px;
     text-align: justify;
+    display: flex;
+    justify-content: end;
 }
 
 .service-subtitling {
-    grid-area: service-subtitling;
     margin: 30px;
     text-align: justify;
+    display: flex;
+    justify-content: start;
 }
 
 .service-transcription {
-    grid-area: service-transcription;
     margin: 30px;
     text-align: justify;
+    display: flex;
+    justify-content: end;
 }
 
 .service-website {
-    grid-area: service-website;
     margin: 30px;
     text-align: justify;
+    display: flex;
+    justify-content: start;
 }
 
 .service-mtranslation {
-    grid-area: service-mtranslation;
     margin: 30px;
     text-align: justify;
+    display: flex;
+    justify-content: end;
 }
+
+
 
 /* Quality page */
 
@@ -846,6 +851,7 @@ ul li {
     "headline-ourservices"
     "services"
     "footer";
+    background-color: #458eb5;
 }
 
 .headline-ourservices {
