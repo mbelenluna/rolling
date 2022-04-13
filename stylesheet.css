@@ -458,49 +458,81 @@ ul li {
     background-color: white;
 }
 
+.titleservice {
+    margin: 1rem;
+}
+
+.service-pic-gt {
+    display: flex;
+    align-items: center;
+}
+
+.service-pic-lt {
+    display: flex;
+    align-items: center;
+}
+
+.service-pic-s {
+    display: flex;
+    align-items: center;
+}
+
+.service-pic-t {
+    display: flex;
+    align-items: center;
+}
+
+.service-pic-wl {
+    display: flex;
+    align-items: center;
+}
+
+.service-pic-mt {
+    display: flex;
+    align-items: center;
+}
+
 .service-gtranslation {
-    padding: 2rem;
+    padding: 1rem;
     text-align: justify;
     display: flex;
     justify-content: start;
 }
 
 .service-ltranslation {
-    margin: 30px;
+    margin: 1rem;
     text-align: justify;
     display: flex;
     justify-content: end;
 }
 
 .service-subtitling {
-    margin: 30px;
+    margin: 1rem;
     text-align: justify;
     display: flex;
     justify-content: start;
 }
 
 .service-transcription {
-    margin: 30px;
+    margin: 1rem;
     text-align: justify;
     display: flex;
     justify-content: end;
 }
 
 .service-website {
-    margin: 30px;
+    margin: 1rem;
     text-align: justify;
     display: flex;
     justify-content: start;
 }
 
 .service-mtranslation {
-    margin: 30px;
+    margin: 1rem;
     text-align: justify;
     display: flex;
     justify-content: end;
 }
-
-
 
 /* Quality page */
 
@@ -903,11 +935,13 @@ ul li {
 
 #body-testimonialspage {
     grid-area: body-testimonialspage;
+    background-color: #bed5e7;
 }
 
 .clients-logos {
     grid-area: clients-logos;
     padding-bottom: 1rem;
+    background-color: white;
 }
 
 /* Full Responsive */
@@ -980,12 +1014,18 @@ ul li {
     .serviceslist-container {
         display: grid;
         grid-template-areas:
-        "service-gtranslation"
-        "service-ltranslation"
-        "service-mtranslation"
-        "service-subtitling"
-        "service-transcription"
-        "service-website";
+        "service-text-gt"
+        "service-pic-gt"
+        "service-text-lt"
+        "service-pic-lt"
+        "service-text-s"
+        "service-pic-s"
+        "service-text-t"
+        "service-pic-t"
+        "service-text-wl"
+        "service-pic-wl"
+        "service-text-ml"
+        "service-pic-ml"
         grid-template-columns: auto;
     }
 
