@@ -460,40 +460,48 @@ ul li {
 
 .titleservice {
     margin: 1rem;
+    text-align: center;
+    justify-content: center;
 }
 
 .service-pic-gt {
     display: flex;
     align-items: center;
+    justify-content: center;
 }
 
 .service-pic-lt {
     display: flex;
     align-items: center;
+    justify-content: center;
 }
 
 .service-pic-s {
     display: flex;
     align-items: center;
+    justify-content: center;
 }
 
 .service-pic-t {
     display: flex;
     align-items: center;
+    justify-content: center;
 }
 
 .service-pic-wl {
     display: flex;
     align-items: center;
+    justify-content: center;
 }
 
 .service-pic-mt {
     display: flex;
     align-items: center;
+    justify-content: center;
 }
 
 .service-gtranslation {
-    padding: 1rem;
+    padding: 0;
     text-align: justify;
     display: flex;
     justify-content: start;
@@ -1010,24 +1018,6 @@ ul li {
     }
 
 /* Our Services page */
-
-    .serviceslist-container {
-        display: grid;
-        grid-template-areas:
-        "service-text-gt"
-        "service-pic-gt"
-        "service-text-lt"
-        "service-pic-lt"
-        "service-text-s"
-        "service-pic-s"
-        "service-text-t"
-        "service-pic-t"
-        "service-text-wl"
-        "service-pic-wl"
-        "service-text-ml"
-        "service-pic-ml"
-        grid-template-columns: auto;
-    }
 
     .service {
         width: 90%;
