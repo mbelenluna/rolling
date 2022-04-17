@@ -61,7 +61,6 @@ p {
 }
 
 a {
-    color: rgb(103, 177, 237);
     text-decoration: none;
 }
 
@@ -91,7 +90,6 @@ a {
 
 #menuitem1 {
     grid-area: menuitem1;
-    color: #1b74bc;
 }
 
 #menuitem2 {
@@ -117,12 +115,24 @@ a {
 .menu-item {
     font-family: titulos3;
     font-weight: bold;
+    color: white;
+}
+
+.menu-item a {
+    border-radius: 6px;
+    padding: 10px;
+}
+
+.menu-item a:hover {
+    transition: all .5s;
+    color: white;
+    background-color: #1762b9;
 }
 
 .menu-item-selected {
     font-family: titulos3;
     font-weight: bold;
-    color: #458eb5;
+    color: black;
 }
 
 ul li {
@@ -181,6 +191,7 @@ ul li {
 
 .button:hover {
     background-color: #1b74bc;
+    transition: all .5s;
 }
 
 /* Lista de servicios (Main Services) */
