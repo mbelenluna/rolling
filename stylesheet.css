@@ -359,11 +359,40 @@ ul li {
     align-content: center;
 }
 
+#menu-footer a {
+    color: #1762b9;
+    padding: 3px 5px;
+    border-radius: 6px;
+    font-weight: bolder;
+}
+
+#menu-footer a:hover {
+    transition: all .5s;
+    background-color: white;
+    font-weight: bolder;
+}
+
+.menu-footer-selected {
+    padding: 3px 5px;
+}
+
 .go-top {
     grid-area: go-top;
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.go-top a {
+    color: #1762b9;
+    font-weight: bolder;
+    padding: 6px;
+    border-radius: 7px;
+}
+
+.go-top a:hover {
+    transition: all .4s;
+    background-color: white;
 }
 
 .pay-paypal {
