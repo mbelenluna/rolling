@@ -34,7 +34,7 @@
 
 h1 {
     font-family: titulos1;
-    color: hsl(207, 100%, 83%);
+    color: #1b74bc;
     text-align: center;
     font-size: 35px;
 }
@@ -422,7 +422,7 @@ ul li {
 /* Presentación (headline) de Testimonials */
 
 .headline-testimonials {
-    background: linear-gradient(to bottom right, black, #1b74bc);
+    background-color: black;
     background-size: cover;
     padding: 5rem 3rem 5rem 3rem;
     display: grid;
@@ -462,7 +462,7 @@ ul li {
 
 /* Presentación (headline) de Our Services */
 .headline-ourservices {
-    background: linear-gradient(to bottom right, black, #1b74bc);
+    background-color: black;
     background-size: cover;
     padding: 5rem 3rem 5rem 3rem;
     display: grid;
@@ -587,19 +587,13 @@ ul li {
 /* Presentación (headline) de Quality */
 
 .headline-quality {
-    background-image: url(images/austin-distel-wawEfYdpkag-unsplash.jpg);
+    background-color: black;
     background-repeat: no-repeat;
     background-size: cover;
     padding: 5rem 3rem 5rem 3rem;
 }
 
-.welcome-text-black {
-    color: black;
-    padding: 0.1rem;
-    font-weight: bolder;
-    text-align: center;
-    overflow-wrap: break-word;
-}
+
 
 /* Body de Quality */
 
@@ -649,7 +643,7 @@ ul li {
 /* Presentación (headline) de About Us */
 
 .headline-aboutus {
-    background: linear-gradient(to bottom right, black, #1b74bc);
+    background-color: black;
     background-size: cover;
     padding: 5rem 3rem 5rem 3rem;
     display: grid;
@@ -983,7 +977,6 @@ ul li {
 
 #body-testimonialspage {
     grid-area: body-testimonialspage;
-    background-color: #bed5e7;
 }
 
 .clients-logos {
