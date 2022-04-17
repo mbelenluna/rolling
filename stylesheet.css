@@ -67,7 +67,7 @@ a {
 /* Header (todas las páginas) */
 
 #header {
-    border: #1762b9 10px;
+    border-bottom: 3px solid #1b74bc;
 }
 
 .menu {
@@ -142,6 +142,10 @@ a {
 ul li {
     font-family: parrafos;
     color: white;
+}
+
+#logo {
+    width: 80%;
 }
 
 #header {
@@ -483,7 +487,7 @@ ul li {
 }
 
 .service {
-    max-width: 95%;
+    max-width: 60%;
     padding: 1rem 0 2rem 0
 }
 
@@ -1211,7 +1215,11 @@ ul li {
     }
 
     h2 {
-        font-size: 15px;
+        font-size: 20px;
+    }
+
+    h3 {
+        font-size: 19px;
     }
 
     /* Testimonials */ 
