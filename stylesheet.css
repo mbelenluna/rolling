@@ -204,9 +204,13 @@ ul li {
 
 /* Lista de servicios (Main Services) */
 
-
 .moreinfo {
     text-align: center;
+}
+
+.service {
+    max-width: 60%;
+    padding: 1rem 0 2rem 0;
 }
 
 .serviceslist-container-home {
@@ -483,9 +487,9 @@ ul li {
     text-align: justify;
 }
 
-.service {
-    max-width: 60%;
-    padding: 1rem 0 2rem 0
+.service-pic {
+    max-width: 95%;
+    padding: 1rem 0 2rem 0;
 }
 
 .enlarged {
