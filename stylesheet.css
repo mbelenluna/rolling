@@ -213,8 +213,8 @@ ul li {
     display: grid;
     grid-template-areas:
     "title title"
-    "translation transcription"
-    "subtitling subtitling"
+    "translation translation"
+    "transcription subtitling"
     "viewall viewall";
     width: auto;
     grid-template-columns: 30% 30%;
@@ -259,15 +259,12 @@ ul li {
 
 .grid-viewall {
     grid-area: viewall;
-    background-color: white;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
 /* Lista de idiomas (Languages we handle) */
-
-
 
 .languages-title {
     grid-area: languages-title;
